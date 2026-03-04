@@ -34,7 +34,7 @@ Once everything was connected, I started the server with the command:
 node src/main.js
 
 
-I used the rest.http file to send requests. For example:
+I used the rest.http file to send requests:
 
 GET http://localhost:3000/counter-increase
 GET http://localhost:3000/counter-read
