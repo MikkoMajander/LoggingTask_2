@@ -1,5 +1,15 @@
+/**
+ * @file Winston logger configuration.
+ * Exports a preconfigured logger instance with console and file transports.
+ */
+
 const { createLogger, transports, format } = require('winston');
 
+/**
+ * Winston logger instance.
+ *
+ * @type {import('winston').Logger}
+ */
 const logger = createLogger({
   level: 'info',
   format: format.combine(
@@ -14,3 +24,4 @@ const logger = createLogger({
 });
 
 module.exports = logger;
+
